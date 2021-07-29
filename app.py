@@ -16,11 +16,21 @@ def index():
 
 @app.route("/choose_activity", methods =["GET", "POST"])
 def choose_activity():
-    if model.recommendation_one:
-        return "Choose an activity! We recommend browsing through some memes!"
-    elif model.recommendation_two:
-        return "Choose an activity! We recommend playing a minigame!"
-    elif model.recommendation_three:
-        return "Choose an activity!"
+    if request.method == "POST":
+        print("Method was POST")
+        if request.form.get == ("rec_one"):
+            return model.recommendation_one
+        if request.form.get == ("rec_two"):
+            return model.recommendation_two
+        if request.form.get == ("rec_three"):
+            return model.recommendation_three
+    else:
+        print("Methodd was GET")
     
+    # if request.form["rec_one"]:
+    #     return model.recommendation_one()
+    # elif request.form["rec_two"]:
+    #     return model.recommendation_two()
+    # elif request.form["rec_three"]:
+    #     return model.recommendation_three()
         

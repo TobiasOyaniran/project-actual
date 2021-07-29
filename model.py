@@ -1,7 +1,7 @@
 
 def recommendation_one():
-    return 
+    return "We recommend browsing through some memes!"
 def recommendation_two():
-    return 
+    return "We recommend playing a minigame!"
 def recommendation_three():
-    return 
+    return "Choose an activity!"
