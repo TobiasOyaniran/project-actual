@@ -6,15 +6,20 @@
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <form method="POST" action="/choose_activity">
+    <form method="POST" action="/results">
         <label for="name">Hello, what's your name?</label>
         <input type="text" name="name">
-        <label for="status">On a scale of 1-3(3 being great, 1 being horrible), how are you doing today?</label>
-        <button type="submit" name="rec_one"  value="1"></button>
-        <button type="submit" name="rec_two"  value="2"></button>
-        <button type="submit" name="rec_three" value="3"></button>
-
-
+        <label for="status">How are you doing today?</label>
+        <input type="radio" id="meme_req" name="recommendations" value="1">
+        <label for="meme_req">Kinda Sad</label>
+        <input type="radio" id ="mini_req" name="recommendations"  value="2">
+        <label for="mini_req">Bored</label>
+        <input type="radio" id="either_or" name="recommendations" value=3>
+        <label for="either_or">I Don't Really Know</label>
+        <input type="submit">
     </form>
+
+
+    
 </body>
 </html>
