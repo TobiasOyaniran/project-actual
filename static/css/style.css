@@ -1,3 +1,20 @@
 body {
-    background-image: url(https://th.bing.com/th/id/R.388b78a7c3ea9b83a8524ba5eb902353?rik=frHg6uNB%2fXLZAg&pid=ImgRaw);
+    background-image: url("https://www.bing.com/th?id=OIP.xd1f2BS6u0wpW311LdzsOwHaHa&w=106&h=105&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
 }
+
+#name_form {
+    font-size: 36px;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: auto;
+    size: 36px;
+
+}
+
+#status_form {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+

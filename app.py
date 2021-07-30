@@ -4,7 +4,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import model 
-import meme_lib
+
 
 # -- Initialization section --
 app = Flask(__name__)

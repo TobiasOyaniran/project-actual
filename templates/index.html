@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>title</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css">
 </head>
 <body>
     <form method="POST" action="/results">
-        <label for="name">Hello, what's your name?</label>
-        <input type="text" name="name">
-        <label for="status">How are you doing today?</label>
-        <input type="radio" id="meme_req" name="recommendations" value="1">
-        <label for="meme_req">Kinda Sad</label>
-        <input type="radio" id ="mini_req" name="recommendations"  value="2">
-        <label for="mini_req">Bored</label>
-        <input type="radio" id="either_or" name="recommendations" value=3>
-        <label for="either_or">I Don't Really Know</label>
-        <input type="submit">
+        <div id = "name_form">
+            <label for="name">Hello, what's your name?</label>
+            <input type="text" name="name">
+        </div>
+        <div id = "status_form">
+            <label for="status">How are you doing today?</label>
+            <input type="radio" id="meme_req" name="recommendations" value="1">
+            <label for="meme_req">Kinda Sad</label>
+            <input type="radio" id ="mini_req" name="recommendations"  value="2">
+            <label for="mini_req">Bored</label>
+            <input type="radio" id="either_or" name="recommendations" value=3>
+            <label for="either_or">I Don't Really Know</label>
+            <input type="submit">
+        </div>
     </form>
 
 
