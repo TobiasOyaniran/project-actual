@@ -29,5 +29,6 @@ def results():
         #     return "No recommendations!"
         user_mood=request.form["recommendations"]
         outcome_info = model.outcome(user_mood)
+        print(outcome_info)        
     return render_template("results.html", user_mood=user_mood, outcome_info=outcome_info)
     
